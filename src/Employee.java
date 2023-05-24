@@ -20,7 +20,7 @@ public class Employee {
     public void SetSalary(float salary) { this.Salary = salary; }
     @Override
     public String toString() {
-        return "ФИО: " + FIO + " Отдел: " + Department + " Зарплата: " + Salary;
+        return " ФИО: " + FIO + " Отдел: " + Department + " Зарплата: " + Salary;
     }
 
 
