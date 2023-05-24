@@ -5,7 +5,7 @@ public class Employee {
     private static int Counter;
     private int Id;
 
-    public Employee( String FIO, int Department, float Salary ) {
+    public Employee( int id, String FIO, int Department, float Salary ) {
         this.FIO = FIO;
         this.Salary = Salary;
         this.Department = Department;
@@ -20,7 +20,7 @@ public class Employee {
     public void SetSalary(float salary) { this.Salary = salary; }
     @Override
     public String toString() {
-        return " ФИО: " + FIO + " Отдел: " + Department + " Зарплата: " + Salary;
+        return "ID: " + Id + " ФИО: " + FIO + " Отдел: " + Department + " Зарплата: " + Salary;
     }
 
 
