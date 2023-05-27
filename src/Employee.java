@@ -1,28 +1,49 @@
 public class Employee {
-    private String FIO;
-    private int Department;
-    private float Salary;
-    private static int Counter;
-    private int Id;
+    private String fio;
+    private int department;
+    private float salary;
+    private static int counter;
+    private int id;
 
-    public Employee( int id, String FIO, int Department, float Salary ) {
-        this.FIO = FIO;
-        this.Salary = Salary;
-        this.Department = Department;
-        Id = ++Counter;
+    public Employee(int id, String fio, int department, float salary) {
+        this.fio = fio;
+        this.salary = salary;
+        this.department = department;
+        this.id = id;
     }
-    public int getId() { return this.Id; }
-    public String getFIO() { return this.FIO; }
-    public int getDepartment() { return this.Department; }
-    public float getSalary() { return this.Salary; }
-    public void SetFIO(String fio) { this.FIO = fio; }
-    public void SetDepartment(int department) { this.Department = department; }
-    public void SetSalary(float salary) { this.Salary = salary; }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public String getFio() {
+        return this.fio;
+    }
+
+    public int getDepartment() {
+        return this.department;
+    }
+
+    public float getSalary() {
+        return this.salary;
+    }
+
+    public void SetFIO(String FIO) {
+        this.fio = FIO;
+    }
+
+    public void SetDepartment(int Department) {
+        this.department = Department;
+    }
+
+    public void SetSalary(float Salary) {
+        this.salary = Salary;
+    }
+
     @Override
     public String toString() {
-        return "ID: " + Id + " ФИО: " + FIO + " Отдел: " + Department + " Зарплата: " + Salary;
+        return "ID:" + id + " ФИО: " + fio + " Отдел:" + department + " Зарплата:" + salary;
     }
-
 
 
 }
